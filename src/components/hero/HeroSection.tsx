@@ -20,7 +20,7 @@ function Hero() {
               anlatılacaktır.
             </p>
             <Link to="/zustand-nedir">
-              <button className="btn btn-accent">Haydi Başlayalım</button>
+              <button className="btn btn-warning">Hadi Başlayalım</button>
             </Link>
           </div>
         </div>

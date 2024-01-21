@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import contents from "../public/content.json";
 import "./index.css";
 import Hero from "./page/hero/Hero.tsx";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Playstation from "./page/playstation/Playstation.tsx";
+import Thanks from "./page/thanks/Thanks.tsx";
 import Tutorial from "./page/tutorial/Tutorial.tsx";
 
 const router = createBrowserRouter([
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/playstation-demo",
     element: <Playstation />,
+  },
+  {
+    path: "/thanks",
+    element: <Thanks />,
   },
 ]);
 

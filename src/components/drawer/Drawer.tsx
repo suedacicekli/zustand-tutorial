@@ -33,7 +33,7 @@ function Drawer() {
                 <li
                   key={item.id}
                   className={`pointer ${
-                    path === item.url ? "bg-gray-200 rounded" : ""
+                    path === item.url ? "bg-gray-200 rounded-md rounded" : ""
                   }`}>
                   <a
                     className="flex items-center p-2 text-gray-500 rounded hover:bg-gray-400  "
@@ -45,7 +45,7 @@ function Drawer() {
               <div className="divider"></div>
               <li
                 className={`pointer ${
-                  path === "/playstation-demo" ? "bg-gray-200" : ""
+                  path === "/playstation-demo" ? "bg-gray-200 rounded-md" : ""
                 }`}>
                 <a
                   className="flex items-center p-2 text-gray-500 rounded-md hover:bg-gray-100"
@@ -53,20 +53,34 @@ function Drawer() {
                   <span className="ml-2 text-sm">Playstation Demo</span>
                 </a>
               </li>
+              <div className="divider"></div>
+              <li
+                className={`pointer ${
+                  path === "/thanks" ? "bg-gray-200 rounded-md" : ""
+                }`}>
+                <a
+                  className="flex items-center p-2 text-gray-500 rounded-md hover:bg-gray-100"
+                  href="/thanks">
+                  <span className="ml-2 text-sm">Team Rigel</span>
+                </a>
+              </li>
             </div>
-            <button
-              className="btn btn-ghost btn-circle"
-              onClick={() =>
-                updateTheme(theme === "wireframe" ? "dark" : "wireframe")
-              }>
-              <div className="indicator">
-                {theme === "wireframe" ? (
-                  <MoonIcon className="h-5" />
-                ) : (
-                  <SunIcon className="h-5" />
-                )}
-              </div>
-            </button>
+            <div className="flex items-center">
+              <button
+                className="btn btn-ghost btn-circle"
+                onClick={() =>
+                  updateTheme(theme === "wireframe" ? "dark" : "wireframe")
+                }>
+                <div className="indicator">
+                  {theme === "wireframe" ? (
+                    <MoonIcon className="h-5" />
+                  ) : (
+                    <SunIcon className="h-5" />
+                  )}
+                </div>
+              </button>
+              <img src="/atmosware.png" className="h-9" alt="" />
+            </div>
           </ul>
         </div>
       </aside>
