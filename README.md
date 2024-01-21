@@ -1,30 +1,33 @@
-# React + TypeScript + Vite
+# Zustand Tutorial Projesi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje atmosware içerisinde sunulacak olan Zustand tutorial projesidir. Bu proje ile Zustand'in temel kullanımını öğrenebilirsiniz.
 
-Currently, two official plugins are available:
+Projeye yeni bir döküman eklemek için : 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Öncelikle `public/contents` dizini altına yeni bir markdown dosyası oluşturun. Örneğin `public/contents/create-project.md`
+- Ardından `public/contents.json` dosyasına yeni dökümanın bilgilerini ekleyin. Örneğin: 
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
+```json
+{
+    "id": 3,
+    "title": "Bir proje oluşturalım",
+    "url": "/create-project",
+    "content": "/contents/create-project.md?url"
   },
-}
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Bu sayede yeni döküman hem menüye eklenecektir. Hemde ilgili sayfa oluşturulacaktır. Title kısmı menüde görünecek olan başlıktır. Url kısmı ise dökümanın url'ini belirtir. Content kısmı ise dökümanın içeriğini belirtir. Content yerine eklediğiniz markdown dosyasının path'ini yazabilirsiniz. Örneğin: `/contents/create-project.md`
+
+## Markdown dosyasında local image kullanmak
+
+Eğer markdown dosyanızda local bir image kullanmak istiyorsanız, `public/screenshots` dizini altına image'ınızı ekleyin. Ardından markdown dosyanızda aşağıdaki gibi kullanabilirsiniz.
+
+```markdown
+![Bear](../screenshots/json-view.jpeg)
+```
+
+## Hazırlayanlar
+
+- Sueda Çiçekli
+- Büşra Kosnak
+- İrem Gündoğan
