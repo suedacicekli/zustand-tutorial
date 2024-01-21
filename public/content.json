@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Zustand Nedir ?",
+    "url": "/what-is-zustand",
+    "content": "/contents/what-is-zustand.md?url"
+  },
+  {
+    "id": 2,
+    "title": "Zustan'in Avantajları",
+    "url": "/advantage-zustand",
+    "content": "/contents/advantage-zustand.md?url"
+  },
+  {
+    "id": 3,
+    "title": "Bir proje oluşturalım",
+    "url": "/create-project",
+    "content": "/contents/create-project.md?url"
+  },
+  {
+    "id": 4,
+    "title": "Store Oluşturmak",
+    "url": "/create-store-in-zustand",
+    "content": "/contents/create-store-in-zustand.md?url"
+  },
+  {
+    "id": 5,
+    "title": "Store'a Erişmek",
+    "url": "/access-to-store",
+    "content": "/contents/access-to-store.md?url"
+  },
+  {
+    "id": 6,
+    "title": "State Güncelleme",
+    "url": "/update-state",
+    "content": "/contents/update-state.md?url"
+  }
+]
