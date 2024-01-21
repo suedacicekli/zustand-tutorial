@@ -2,7 +2,28 @@
 
 Bu proje atmosware içerisinde sunulacak olan Zustand tutorial projesidir. Bu proje ile Zustand'in temel kullanımını öğrenebilirsiniz.
 
-Projeye yeni bir döküman eklemek için : 
+## Çalıştırma
+
+Projeyi çalıştırmak için öncelikle projeyi klonlayın. Ardından bağımlılıkları kurun.
+
+```bash
+npm run db
+```
+
+Ardından json dosyasını api olarak çalıştırmak için aşağıdaki komutu çalıştırın. Bu işlemde açılan terminali kapatmayın.
+
+```bash
+npm run db
+```
+
+Bu işlemin yeni bir terminal açın ve projeyi ayağa kaldırmak için aşağıdaki komutu çalıştırın.
+
+```bash
+npm run dev
+```
+
+
+## Projeye Yeni Döküman Eklemek
 
 - Öncelikle `public/contents` dizini altına yeni bir markdown dosyası oluşturun. Örneğin `public/contents/create-project.md`
 - Ardından `public/contents.json` dosyasına yeni dökümanın bilgilerini ekleyin. Örneğin: 
