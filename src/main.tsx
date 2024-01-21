@@ -1,17 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
-import "./index.css";
 import contents from "../public/content.json";
-
+import "./index.css";
+import Hero from "./page/hero/Hero.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Tutorial from "./page/tutorial/Tutorial.tsx";
 import Playstation from "./page/playstation/Playstation.tsx";
+import Tutorial from "./page/tutorial/Tutorial.tsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Hero />,
   },
   ...contents.map((content, i) => ({
     path: content.url,

@@ -1,19 +1,19 @@
 import { MoonIcon, SunIcon } from "@heroicons/react/16/solid";
-import React from "react";
+import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import content from "../../../public/content.json";
+import themeStore from "../../store/themeStore";
 
 function Drawer() {
-  const htmlTag = document.querySelector("html");
-  const [theme, setTheme] = React.useState(htmlTag?.getAttribute("data-theme"));
   const location = useLocation();
   const path = location.pathname;
+  const theme = themeStore((state) => state.theme);
+  const updateTheme = themeStore((state) => state.setTheme);
+  const htmlTag = document.querySelector("html");
 
-  const handleChangeTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    htmlTag?.setAttribute("data-theme", newTheme);
-    setTheme(newTheme);
-  };
+  useEffect(() => {
+    htmlTag?.setAttribute("data-theme", theme);
+  }, [theme]);
 
   return (
     <>
@@ -21,9 +21,9 @@ function Drawer() {
         id="cta-button-sidebar"
         className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
         aria-label="Sidebar">
-        <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50">
+        <div className="h-full px-3 py-4 overflow-y-auto border-r">
           <ul className="space-y-2 font-medium h-full flex flex-col justify-between">
-            <div className="first">
+            <div className="first flex flex-col gap-4">
               <li className="text-xl font-bold rounded-xl my-5">
                 <a href="/" className="flex items-center justify-center">
                   <img src="/zustand.ico" className="w-10" alt="" />
@@ -33,10 +33,10 @@ function Drawer() {
                 <li
                   key={item.id}
                   className={`pointer ${
-                    path === item.url ? "bg-gray-200" : ""
+                    path === item.url ? "bg-gray-200 rounded" : ""
                   }`}>
                   <a
-                    className="flex items-center p-2 text-gray-500 rounded-md hover:bg-gray-100"
+                    className="flex items-center p-2 text-gray-500 rounded hover:bg-gray-400  "
                     href={item.url}>
                     <span className="ml-2 text-sm">{item.title}</span>
                   </a>
@@ -56,12 +56,14 @@ function Drawer() {
             </div>
             <button
               className="btn btn-ghost btn-circle"
-              onClick={() => handleChangeTheme()}>
+              onClick={() =>
+                updateTheme(theme === "wireframe" ? "dark" : "wireframe")
+              }>
               <div className="indicator">
-                {theme === "light" ? (
-                  <SunIcon className="h-5" />
-                ) : (
+                {theme === "wireframe" ? (
                   <MoonIcon className="h-5" />
+                ) : (
+                  <SunIcon className="h-5" />
                 )}
               </div>
             </button>
