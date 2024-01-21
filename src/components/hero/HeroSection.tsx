@@ -19,7 +19,7 @@ function Hero() {
               <strong> Zustand</strong> kütüphanesinin kullanımı ve özellikleri
               anlatılacaktır.
             </p>
-            <Link to="/zustand-nedir">
+            <Link to="/what-is-zustand">
               <button className="btn btn-warning">Hadi Başlayalım</button>
             </Link>
           </div>
