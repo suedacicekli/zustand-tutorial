@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import Markdown from "react-markdown";
 import Drawer from "../../components/drawer/Drawer";
-import { after } from "node:test";
 
 interface TutorialProps {
   after: string;
@@ -32,14 +31,13 @@ function Tutorial({ after, before, content }: TutorialProps): JSX.Element {
         <div className="prose max-w-3xl mx-auto mt-10">
           <Markdown>{markdown}</Markdown>
           <div className="flex gap-5">
-            {" "}
             {before && (
               <a href={before} className="btn btn-danger no-underline	">
                 Önceki
               </a>
             )}
             {after && (
-              <a href={after} className="btn btn-danger no-underline	">
+              <a href={after} className="btn btn-danger no-underline	ml-auto">
                 Sonraki
               </a>
             )}

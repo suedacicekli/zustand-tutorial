@@ -13,24 +13,30 @@
   },
   {
     "id": 3,
+    "title": "Zustand vs Redux",
+    "url": "/comparison-with-redux",
+    "content": "/contents/comparison-with-redux.md?url"
+  },
+  {
+    "id": 4,
     "title": "Bir proje oluşturalım",
     "url": "/create-project",
     "content": "/contents/create-project.md?url"
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "Store Oluşturmak",
     "url": "/create-store-in-zustand",
     "content": "/contents/create-store-in-zustand.md?url"
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "Store'a Erişmek",
     "url": "/access-to-store",
     "content": "/contents/access-to-store.md?url"
   },
   {
-    "id": 6,
+    "id": 7,
     "title": "State Güncelleme",
     "url": "/update-state",
     "content": "/contents/update-state.md?url"
