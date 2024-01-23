@@ -19,24 +19,30 @@
   },
   {
     "id": 4,
+    "title": "Zustand vs Jotai",
+    "url": "/comparison-with-jotai",
+    "content": "/contents/comparison-with-jotai.md?url"
+  }
+  {
+    "id": 5,
     "title": "Bir proje oluşturalım",
     "url": "/create-project",
     "content": "/contents/create-project.md?url"
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "Store Oluşturmak",
     "url": "/create-store-in-zustand",
     "content": "/contents/create-store-in-zustand.md?url"
   },
   {
-    "id": 6,
+    "id": 7,
     "title": "Store'a Erişmek",
     "url": "/access-to-store",
     "content": "/contents/access-to-store.md?url"
   },
   {
-    "id": 7,
+    "id": 8,
     "title": "State Güncelleme",
     "url": "/update-state",
     "content": "/contents/update-state.md?url"
