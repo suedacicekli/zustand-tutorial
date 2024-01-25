@@ -7,21 +7,16 @@ function Team() {
         <div className="container max-w-7xl px-4">
           <div className="flex flex-wrap justify-center text-center mb-24">
             <div className="w-full lg:w-6/12 px-4">
-              <h1 className=" text-4xl font-bold mb-8">Rigel</h1>
-
-              <p className=" text-lg font-light">
-                With over 100 years of combined experience, we've got a
-                well-seasoned team at the helm.
-              </p>
+              <h1 className=" text-4xl font-bold mb-8 mt-20">Rigel</h1>
             </div>
           </div>
 
-          <div className="flex flex-wrap">
-            <div className="w-full md:w-6/12 lg:w-4/12 mb-6 px-6 sm:px-6 lg:px-4">
+          <div className="flex flex-wrap items-center justify-center gap-5">
+            <div className="mb-6 px-6 sm:px-6 lg:px-4">
               <div className="flex flex-col">
                 <a href="#" className="mx-auto">
                   <img
-                    className="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                    className="h-28 rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
                     src="https://media.licdn.com/dms/image/C4D03AQGvu1mMe9qpvg/profile-displayphoto-shrink_800_800/0/1652634665339?e=2147483647&v=beta&t=3nNmpH-jOUClQQ7jOnDwEK6-mSl-y4W1FQiDdxFU_tM"
                   />
                 </a>
@@ -52,11 +47,11 @@ function Team() {
               </div>
             </div>
 
-            <div className="w-full md:w-6/12 lg:w-4/12 mb-6 px-6 sm:px-6 lg:px-4">
+            <div className="mb-6 px-6 sm:px-6 lg:px-4">
               <div className="flex flex-col">
                 <a href="#" className="mx-auto">
                   <img
-                    className="rounded-2xl min-w-full drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                    className="h-28 rounded-2xl min-w-full drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
                     src="https://media.licdn.com/dms/image/C4D03AQGNDhGPz8rmfQ/profile-displayphoto-shrink_800_800/0/1655464261661?e=1711584000&v=beta&t=mXTu5ynE56ur-NySxkpD1sD5hIxDHOYwaenImMK94yk"
                   />
                 </a>
@@ -87,11 +82,11 @@ function Team() {
               </div>
             </div>
 
-            <div className="w-full md:w-6/12 lg:w-4/12 mb-6 px-6 sm:px-6 lg:px-4">
+            <div className="mb-6 px-6 sm:px-6 lg:px-4">
               <div className="flex flex-col">
                 <a href="#" className="mx-auto">
                   <img
-                    className="rounded-2xl min-w-full drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                    className="h-28 rounded-2xl min-w-full drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
                     src="https://media.licdn.com/dms/image/D4D03AQHTX_K2ydyFoA/profile-displayphoto-shrink_800_800/0/1670777924778?e=2147483647&v=beta&t=PjhCXXqQpSecxe_dDsQ54b06NJ7YmDzPJYP8rgVUKDI"
                   />
                 </a>

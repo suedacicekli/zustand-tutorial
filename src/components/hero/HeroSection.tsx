@@ -11,7 +11,7 @@ function Hero() {
             className="max-w-lg rounded-lg shadow-2xl"
           />
           <div>
-            <h1 className="text-5xl font-bold">
+            <h1 className="text-5xl font-bold mt-5">
               Zustand Tanıtım Sunumuna Hoşgeldiniz 👋🏼
             </h1>
             <p className="py-6">

@@ -6,7 +6,7 @@ interface Theme {
 }
 
 const themeStore = create<Theme>((set) => ({
-  theme: localStorage.getItem("theme") || "wireframe",
+  theme: localStorage.getItem("theme") || "dark",
   setTheme: (theme) => {
     localStorage.setItem("theme", theme);
     set({ theme });

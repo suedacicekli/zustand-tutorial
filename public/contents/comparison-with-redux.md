@@ -32,7 +32,7 @@ Kavramsal olarak, Zustand ve Redux oldukça benzerdir ve her ikisi de değişmez
 
 - Redux, durumun değiştirilemez (immutable) olmasına dayanır. State'in değişimini izlemek ve kontrol etmek için Redux'un belirli bir yapıyı takip etmesi gerekir.
 
-**↔️Middleware:**
+**↔️ Middleware:**
 
 - Redux, middleware kullanımına dayanarak asenkron işlemleri ve diğer özel durumları işlemek için esnek bir yapı sağlar.
 

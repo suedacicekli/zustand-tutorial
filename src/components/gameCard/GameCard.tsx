@@ -46,15 +46,15 @@ function GameCard({ game }: GameCardProps) {
         <div className="flex items-center justify-between text-sm font-medium">
           {isGameSaved ? (
             <button
-              className="btn btn-outline btn-error"
+              className="btn btn-outline btn-error m-0"
               onClick={() => setSavedGames(game)}>
-              <BookmarkIcon className="h-5 w-5" /> Listeden Çıkar
+              <BookmarkIcon className="h-5 w-5" />
             </button>
           ) : !isGameIgnored ? (
             <button
               className="btn btn-outline btn-error"
               onClick={() => setSavedGames(game)}>
-              <BookmarkIcon className="h-5 w-5" /> Kaydet
+              <BookmarkIcon className="h-5 w-5" />
             </button>
           ) : null}
 
@@ -62,14 +62,14 @@ function GameCard({ game }: GameCardProps) {
             <button
               className="btn btn-outline btn-accent"
               onClick={() => setIgnoredGames(game)}>
-              <HandThumbDownIcon className="h-5 w-5" /> Listeden Çıkar
+              <HandThumbDownIcon className="h-5 w-5" />
             </button>
           )}
           {!isGameSaved && !isGameIgnored && (
             <button
               className="btn btn-outline btn-accent"
               onClick={() => setIgnoredGames(game)}>
-              <HandThumbDownIcon className="h-5 w-5" /> İlgilenmiyorum
+              <HandThumbDownIcon className="h-5 w-5" />
             </button>
           )}
         </div>

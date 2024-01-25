@@ -7,7 +7,6 @@ Zustand tek bir depo iken Jotai bir araya gelebilen ilkel atomlardan oluşuyor.
 
 # Kurulum
 ```js
-
 # npm
 npm i jotai
 

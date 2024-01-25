@@ -48,7 +48,7 @@ function Playstation() {
           <img src="/psLogo.png" className="w-10 navbar-center" alt="" />
           <div className="navbar-end"></div>
         </div>
-        <div role="tablist" className="tabs tabs-bordered m-10 w-full">
+        <div role="tablist" className="tabs tabs-bordered w-full mt-10">
           <input
             type="radio"
             name="my_tabs_2"
@@ -59,17 +59,6 @@ function Playstation() {
             checked={activeTab === "tumOyunlar"}
             onChange={() => handleTabChange("tumOyunlar")}
           />
-          <div
-            role="tabpanel"
-            className={`tab-content bg-base-100 p-6 ${
-              activeTab === "tumOyunlar" ? "block" : "hidden"
-            }`}>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-              {filteredGames.map((game) => (
-                <GameCard key={game.id} game={game} />
-              ))}
-            </div>
-          </div>
 
           <input
             type="radio"
@@ -81,17 +70,6 @@ function Playstation() {
             checked={activeTab === "kaydedilenOyunlar"}
             onChange={() => handleTabChange("kaydedilenOyunlar")}
           />
-          <div
-            role="tabpanel"
-            className={`tab-content bg-base-100 p-6 ${
-              activeTab === "kaydedilenOyunlar" ? "block" : "hidden"
-            }`}>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-              {savedGames.map((game) => (
-                <GameCard key={game.id} game={game} />
-              ))}
-            </div>
-          </div>
 
           <input
             type="radio"
@@ -103,6 +81,30 @@ function Playstation() {
             checked={activeTab === "ilgilenilmeyenOyunlar"}
             onChange={() => handleTabChange("ilgilenilmeyenOyunlar")}
           />
+        </div>
+        <div className="games">
+          <div
+            role="tabpanel"
+            className={`tab-content bg-base-100 p-6 ${
+              activeTab === "tumOyunlar" ? "block" : "hidden"
+            }`}>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+              {filteredGames.map((game) => (
+                <GameCard key={game.id} game={game} />
+              ))}
+            </div>
+          </div>
+          <div
+            role="tabpanel"
+            className={`tab-content bg-base-100 p-6 ${
+              activeTab === "kaydedilenOyunlar" ? "block" : "hidden"
+            }`}>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+              {savedGames.map((game) => (
+                <GameCard key={game.id} game={game} />
+              ))}
+            </div>
+          </div>
           <div
             role="tabpanel"
             className={`tab-content bg-base-100 p-6 ${

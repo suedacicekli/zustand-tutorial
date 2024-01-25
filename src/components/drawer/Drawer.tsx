@@ -23,7 +23,7 @@ function Drawer() {
         aria-label="Sidebar">
         <div className="h-full px-3 py-4 overflow-y-auto border-r">
           <ul className="space-y-2 font-medium h-full flex flex-col justify-between">
-            <div className="first flex flex-col gap-4">
+            <div className="first flex flex-col gap-2">
               <li className="text-xl font-bold rounded-xl my-5">
                 <a href="/" className="flex items-center justify-center">
                   <img src="/zustand.ico" className="w-10" alt="" />
