@@ -1,5 +1,3 @@
-import React from "react";
-
 function Team() {
   return (
     <div className="sm:ml-64">
@@ -7,7 +5,7 @@ function Team() {
         <div className="container max-w-7xl px-4">
           <div className="flex flex-wrap justify-center text-center mb-24">
             <div className="w-full lg:w-6/12 px-4">
-              <h1 className=" text-4xl font-bold mb-8 mt-20">Rigel</h1>
+              <h1 className=" text-4xl font-bold mb-8 ">Rigel</h1>
             </div>
           </div>
 

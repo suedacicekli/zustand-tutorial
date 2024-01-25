@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Team from "./Team";
 
 function Hero() {
   return (

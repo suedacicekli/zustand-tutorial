@@ -1,5 +1,5 @@
 import { MoonIcon, SunIcon } from "@heroicons/react/16/solid";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import content from "../../../public/content.json";
 import themeStore from "../../store/themeStore";
