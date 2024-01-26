@@ -13,7 +13,11 @@ function Tutorial({ after, before, content }: TutorialProps): JSX.Element {
 
   useEffect(() => {
     import(content).then((res) => {
-      fetch(res.default)
+      fetch(res.default, {
+        headers: {
+          "Content-Type": "text/markdown",
+        },
+      })
         .then((response) => response.text())
         .then((text) => {
           setMarkdown(text);
