@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Zustand Nedir ?",
     "url": "/what-is-zustand",
-    "content": "/contents/what-is-zustand.md?url"
+    "content": "./contents/what-is-zustand.md?url"
   },
   {
     "id": 2,
