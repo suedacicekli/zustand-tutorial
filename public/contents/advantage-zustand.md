@@ -18,3 +18,7 @@
 
 
 Bu avantajlar, Zustand'ın kullanımını tercih edilebilir kılan özellikleridir. Ancak, her durum yönetimi çözümü gibi, kullanım durumunuza, projenizin ihtiyaçlarına ve geliştirici tercihlerinize bağlı olarak avantajlar ve dezavantajlar değerlendirilmelidir.
+
+**Keşfetmeye Başla 🚀**
+
+Şimdi, projenin içerisindeki durumu daha etkili bir şekilde yönetmek için Zustand'ı keşfetmeye başlayabilirsin. İyi kodlamalar! 👩‍💻👨‍💻

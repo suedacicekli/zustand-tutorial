@@ -52,4 +52,4 @@ Kavramsal olarak, Zustand ve Redux oldukça benzerdir ve her ikisi de değişmez
 
 🏁 Sonuç olarak, küçük ve orta ölçekli projelerde Zustand daha hafif ve basit bir çözüm sunabilirken, büyük ve karmaşık uygulamalarda Redux'un geniş kapsamlı özellikleri ve gelişmiş araçları daha avantajlı olabilir. Seçim, projenizin ihtiyaçlarına ve geliştirme tercihlerinize bağlı olacaktır.
 
-- Popülerlik ve diğer özellikler [jotai-vs-zustand](https://npmtrends.com/redux-vs-zustand) üzerinden incelenebilir.
+- Popülerlik ve diğer özellikler [redux-vs-zustand](https://npmtrends.com/redux-vs-zustand) üzerinden incelenebilir.
