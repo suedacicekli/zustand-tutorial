@@ -1,6 +1,6 @@
 # Zustand Tutorial Projesi
 
-[LIVE DEMO](https://zustand.sueda.me) 
+[LIVE DEMO](https://zustand.sueda.me)
 
 Bu proje atmosware içerisinde sunulacak olan Zustand tutorial projesidir. Bu proje ile Zustand'in temel kullanımını öğrenebilirsiniz.
 
@@ -24,16 +24,15 @@ Bu işlemin (yeni bir) terminal açın ve projeyi ayağa kaldırmak için aşağ
 npm run dev
 ```
 
-
 ## Projeye Yeni Döküman Eklemek
 
 - Öncelikle `public/contents` dizini altına yeni bir markdown dosyası oluşturun. Örneğin `public/contents/create-project.md`
-- Ardından `public/contents.json` dosyasına yeni dökümanın bilgilerini ekleyin. Örneğin: 
+- Ardından `public/contents.json` dosyasına yeni dökümanın bilgilerini ekleyin. Örneğin:
 
 ```json
 {
     "id": 3,
-    "title": "Bir proje oluşturalım",
+    "title": "Bir Proje Oluşturalım",
     "url": "/create-project",
     "content": "/contents/create-project.md?url"
   },

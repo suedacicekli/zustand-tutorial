@@ -13,9 +13,15 @@ function Tutorial({ after, before, content }: TutorialProps): JSX.Element {
 
   useEffect(() => {
     import(content).then((res) => {
+      console.log(content);
+      console.log(res.default);
       fetch(res.default)
-        .then((response) => response.text())
+        .then((response) => {
+          console.log(response);
+          return response.text();
+        })
         .then((text) => {
+          console.log(text);
           setMarkdown(text);
         })
         .catch((error) => {

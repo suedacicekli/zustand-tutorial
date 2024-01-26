@@ -54,10 +54,7 @@ function Drawer() {
                 </a>
               </li>
               <div className="divider"></div>
-              <li
-                className={`pointer ${
-                  path === "/thanks" ? "bg-gray-200 rounded-md" : ""
-                }`}>
+              <li className={`pointer ${path === "/thanks" ? "bg-gray-200 rounded-md" : ""}`}>
                 <a
                   className="flex items-center p-2 text-gray-500 rounded-md hover:bg-gray-100"
                   href="/thanks">
@@ -68,9 +65,7 @@ function Drawer() {
             <div className="flex items-center">
               <button
                 className="btn btn-ghost btn-circle"
-                onClick={() =>
-                  updateTheme(theme === "wireframe" ? "dark" : "wireframe")
-                }>
+                onClick={() => updateTheme(theme === "wireframe" ? "dark" : "wireframe")}>
                 <div className="indicator">
                   {theme === "wireframe" ? (
                     <MoonIcon className="h-5" />

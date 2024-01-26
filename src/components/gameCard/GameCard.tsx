@@ -13,20 +13,12 @@ function GameCard({ game }: GameCardProps) {
   const setIgnoredGames = gameStore((state) => state.setIgnoredGame);
 
   const isGameSaved = savedGames.some((savedGame) => savedGame.id === game.id);
-  const isGameIgnored = ignoredGames.some(
-    (ignoredGame) => ignoredGame.id === game.id
-  );
+  const isGameIgnored = ignoredGames.some((ignoredGame) => ignoredGame.id === game.id);
 
   return (
     <div className="relative mt-10 flex w-full max-w-xs flex-col overflow-hidden rounded-lg border shadow-md">
-      <a
-        className="relative mx-3 mt-3 flex overflow-hidden rounded-xl"
-        href="#">
-        <img
-          className="object-cover min-w-full"
-          src={game.mainImage}
-          alt="product image"
-        />
+      <a className="relative mx-3 mt-3 flex overflow-hidden rounded-xl" href="#">
+        <img className="object-cover min-w-full" src={game.mainImage} alt="product image" />
         <span className="absolute top-0 p-1 left-0 m-2 badge badge-ghost">
           {game.discount}% İndirim
         </span>
@@ -38,37 +30,27 @@ function GameCard({ game }: GameCardProps) {
         <div className="mt-2 mb-5 flex items-center justify-between">
           <p className="flex gap-2 items-baseline	">
             <span className="text-sm  line-through">₺{game.price}</span>
-            <span className="text-3xl font-bold ">
-              ₺{game.newPrice.toFixed(1)}
-            </span>
+            <span className="text-3xl font-bold ">₺{game.newPrice.toFixed(1)}</span>
           </p>
         </div>
         <div className="flex items-center justify-between text-sm font-medium">
           {isGameSaved ? (
-            <button
-              className="btn btn-outline btn-error m-0"
-              onClick={() => setSavedGames(game)}>
+            <button className="btn btn-outline btn-error m-0" onClick={() => setSavedGames(game)}>
               <BookmarkIcon className="h-5 w-5" />
             </button>
           ) : !isGameIgnored ? (
-            <button
-              className="btn btn-outline btn-error"
-              onClick={() => setSavedGames(game)}>
+            <button className="btn btn-outline btn-error" onClick={() => setSavedGames(game)}>
               <BookmarkIcon className="h-5 w-5" />
             </button>
           ) : null}
 
           {isGameIgnored && (
-            <button
-              className="btn btn-outline btn-accent"
-              onClick={() => setIgnoredGames(game)}>
+            <button className="btn btn-outline btn-accent" onClick={() => setIgnoredGames(game)}>
               <HandThumbDownIcon className="h-5 w-5" />
             </button>
           )}
           {!isGameSaved && !isGameIgnored && (
-            <button
-              className="btn btn-outline btn-accent"
-              onClick={() => setIgnoredGames(game)}>
+            <button className="btn btn-outline btn-accent" onClick={() => setIgnoredGames(game)}>
               <HandThumbDownIcon className="h-5 w-5" />
             </button>
           )}
