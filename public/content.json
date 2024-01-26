@@ -3,48 +3,48 @@
     "id": 1,
     "title": "Zustand Nedir ?",
     "url": "/what-is-zustand",
-    "content": "/contents/what-is-zustand.md?url"
+    "content": "https://zustand.sueda.me/contents/what-is-zustand.md?url"
   },
   {
     "id": 2,
     "title": "Zustan'in Avantajları",
     "url": "/advantage-zustand",
-    "content": "/contents/advantage-zustand.md?url"
+    "content": "https://zustand.sueda.me/contents/advantage-zustand.md?url"
   },
   {
     "id": 3,
     "title": "Zustand vs Redux",
     "url": "/comparison-with-redux",
-    "content": "/contents/comparison-with-redux.md?url"
+    "content": "https://zustand.sueda.me/contents/comparison-with-redux.md?url"
   },
   {
     "id": 4,
     "title": "Zustand vs Jotai",
     "url": "/comparison-with-jotai",
-    "content": "/contents/comparison-with-jotai.md?url"
+    "content": "https://zustand.sueda.me/contents/comparison-with-jotai.md?url"
   },
   {
     "id": 5,
     "title": "Bir proje oluşturalım",
     "url": "/create-project",
-    "content": "/contents/create-project.md?url"
+    "content": "https://zustand.sueda.me/contents/create-project.md?url"
   },
   {
     "id": 6,
     "title": "Store Oluşturmak",
     "url": "/create-store-in-zustand",
-    "content": "/contents/create-store-in-zustand.md?url"
+    "content": "https://zustand.sueda.me/contents/create-store-in-zustand.md?url"
   },
   {
     "id": 7,
     "title": "Store'a Erişmek",
     "url": "/access-to-store",
-    "content": "/contents/access-to-store.md?url"
+    "content": "https://zustand.sueda.me/contents/access-to-store.md?url"
   },
   {
     "id": 8,
     "title": "State Güncelleme",
     "url": "/update-state",
-    "content": "/contents/update-state.md?url"
+    "content": "https://zustand.sueda.me/contents/update-state.md?url"
   }
 ]
