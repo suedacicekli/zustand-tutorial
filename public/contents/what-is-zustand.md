@@ -17,4 +17,4 @@ Zustand'ı projenize eklemek için terminal veya komut istemcisine şu komutu ya
 
     npm install zustand   # or yarn add zustand or pnpm add zustand
 
-İlham kaynağımız [zustand](https://docs.pmnd.rs/zustand/getting-started/introduction#installation) dökümanına ve zustand göz atabilirsiniz.
+İlham kaynağımız [zustand](https://docs.pmnd.rs/zustand/getting-started/introduction#installation) dökümanına göz atabilirsiniz.
